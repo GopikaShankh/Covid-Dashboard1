@@ -7,7 +7,6 @@ This project is a COVID-19 Dashboard built with **React**, **Recharts**, and **A
 ## Features:
 - **Country Selector** — Choose any country from the list to see COVID-19 data.
 - **Historical Data Visualization** — Line charts display cases, recoveries, and deaths over time.
-- **Current Status Visualization** — A pie chart represents current case statuses.
 - **Date Filter** — Select a custom date range to filter historical data.
 - **Live Data Fetching** — Data updates in real-time based on the selected country.
 - **Error Handling** — Displays a user-friendly message if there is an issue fetching data.
@@ -49,11 +48,10 @@ Visit `http://localhost:3000` to view the app.
 src/
 │
 ├── components/
-│   ├── Dashboard.js      # Main Dashboard Component
-│   └── StatCard.js       # Reusable card component for statistics
-│
-├── assets/
-│   └── Dashboard.css     # Styling for the Dashboard
+│   ├── LineChart.js     
+│   └── Loader.js
+│   └── PieChart.js
+│   └── StatisticsCard.js
 │
 ├── App.js                # Main Application File
 ├── index.js              # React DOM Renderer
